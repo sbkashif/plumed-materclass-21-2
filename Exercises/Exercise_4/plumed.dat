@@ -1,0 +1,4 @@
+UNITS NATURAL
+data: READ FILE=../../data/uncorrelated_data VALUES=rand
+av: AVERAGE ARG=data STRIDE=1 CLEAR=500
+PRINT ARG=av FILE=colvar STRIDE=500
